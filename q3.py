@@ -1,7 +1,6 @@
 
 
 
-
 def update_dictionary(dct, key, value):
     """
     Task 1
@@ -10,19 +9,31 @@ def update_dictionary(dct, key, value):
     - Return the updated dictionary.
     """
 
-    # If key exists, print original value
     if key in dct:
-        print(dct[key])
+        print("Original value:", dct[key])
 
-    # Update or add the key-value pair
     dct[key] = value
 
     return dct
 
 
 # Task 2
-# Invoke the function using the given scenarios
+# Invoke the function "update_dictionary" using the following scenarios:
+# - {}, "name", "Alice"
+# - {"age": 25}, "age", 26
 
 print(update_dictionary({}, "name", "Alice"))
+
 print(update_dictionary({"age": 25}, "age", 26))
+
+
+
+{'name': 'Alice'}
+
+Original value: 25
+{'age': 26}
+
+
+
+
 

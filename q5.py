@@ -1,6 +1,10 @@
 
 
 
+
+
+
+
 def check_divisibility(num, divisor):
     """
     Task 1
@@ -9,22 +13,23 @@ def check_divisibility(num, divisor):
     - Return True if num is divisible by divisor, False otherwise.
     """
 
-    # Check if both inputs are numeric
-    if not isinstance(num, (int, float)) or not isinstance(divisor, (int, float)):
+    if not (isinstance(num, (int, float)) and isinstance(divisor, (int, float))):
         return False
 
-    # Avoid division by zero
-    if divisor == 0:
-        return False
-
-    # Check divisibility
     return num % divisor == 0
 
 
 # Task 2
-# Invoke the function using the given scenarios
+# Invoke the function "check_divisibility" using the following scenarios:
+# - 10, 2
+# - 7, 3
 
-print(check_divisibility(10, 2))  # Expected: True
-print(check_divisibility(7, 3))   # Expected: False
+print(check_divisibility(10, 2))
 
+print(check_divisibility(7, 3))
+
+
+
+True
+False
 

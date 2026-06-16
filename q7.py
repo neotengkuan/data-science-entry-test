@@ -7,8 +7,7 @@ class Car:
     Task 1
     - Define a class named Car with attributes: make, model, year
     - Initialize these attributes in the __init__ method
-    - Add a method named describe_car() that prints information
-      about the car as "Year Make Model"
+    - Add a method named describe_car() that prints information about the car as "Year Make Model"
     """
 
     def __init__(self, make, model, year):
@@ -21,9 +20,23 @@ class Car:
 
 
 # Task 2
-# Create an instance of the Car class and call describe_car method
+# Create an instance of the Car class with the following attributes and call describe_car method:
+# - Make: Toyota, Model: Corolla, Year: 2020
 
-car = Car("Toyota", "Corolla", 2020)
-car.describe_car()
+my_car = Car("Toyota", "Corolla", 2020)
+
+my_car.describe_car()
 
 
+
+2020 Toyota Corolla
+
+
+
+This demonstrates:
+
+Class creation
+Constructor (__init__)
+Instance attributes (make, model, year)
+Method definition (describe_car)
+Object instantiation (my_car = Car(...))
